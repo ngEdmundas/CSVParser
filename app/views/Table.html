@@ -1,0 +1,13 @@
+<div ng-controller="TableController">
+  <h2>Parsed CSV Output</h2>
+  <table>
+    <tr>
+      <th ng-repeat="colName in d.header">{{ colName }}</th>
+    </tr>
+    <tr ng-repeat="dataRow in d.rows">
+      <td ng-repeat="dataItem in dataRow">
+        {{ dataItem }}
+      </td>
+    </tr>
+  </table>
+</div>

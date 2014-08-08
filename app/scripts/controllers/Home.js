@@ -1,6 +1,6 @@
 'use strict';
 
-AngularApp.controller('HomeController',
+CSVParserApp.controller('HomeController',
   [          '$scope', '$log',
     function ($scope,   $log) {
       var hcLog = 'HomeController';

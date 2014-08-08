@@ -1,13 +1,12 @@
 'use strict';
 
-AngularApp.controller('C2Controller',
-  [          '$scope', '$log', 's2', 'Data',
-    function ($scope,   $log,   s2,   Data) {
-      var c2Log = 'C2Controller';
-      $log.info(c2Log, 'C2 controller loaded', Data);
+CSVParserApp.controller('TableController',
+  [          '$scope', '$log', 'Data',
+    function ($scope,   $log,   Data) {
+      var tcLog = 'TableController';
+      $log.info(tcLog, 'Table controller loaded', Data);
 
       $scope.d = Data;
-      $scope.s2 = s2;
 /*
       $scope.list = {
         showGroups: -1

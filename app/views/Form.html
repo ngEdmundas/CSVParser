@@ -1,5 +1,6 @@
-<div ng-controller="C1Controller">
-  <h2>View 1</h2>
+<div ng-controller="FormController">
+  <h2>CSV content</h2>
+  <h4>Enter CSV formatted data</h4>
   <!--material-list class="groups">
     <material-item class="group" ng-repeat="(gkey, group) in g.getGroups()">
       <div class="material-tile-left">
@@ -20,15 +21,15 @@
     </material-item>
   </material-list-->
 
-  <!--div class="material-input-group">
-    <label for="new-group-name">New group name</label>
-    <input id="new-group-name"
-           type="text"
-           ng-model="newGroup.name">
-    <button ng-disabled="!newGroup.name"
-            ng-click="addGroup()"
+  <div class="zzz-material-input-group">
+    <!--label for="csv-data">CSV data</label-->
+    <textarea id="csv-data"
+           ng-model="csv.data">
+    </textarea>
+    <button ng-disabled="!csv.data"
+            ng-click="parseCSV()"
             class="add-button">
-      Add group
+      Parse CSV
     </button>
-  </div-->
+  </div>
 </div>

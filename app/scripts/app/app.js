@@ -1,5 +1,5 @@
 /*jshint unused:false */
-/*global AngularApp:true */
+/*global CSVParserApp:true */
 
 'use strict';
 
@@ -7,8 +7,8 @@ var underscore = angular.module('underscore', []);
 underscore.factory('_', function () {
   return window._; // assumes underscore has already been loaded on the page
 });
-console.log('define module AngularApp', angular.module('ngMaterial'));
-var AngularApp = angular.module('AngularApp',
+console.log('define module CSVParserApp', angular.module('ngMaterial'));
+var CSVParserApp = angular.module('CSVParserApp',
   [ 'ngRoute',
     'ngMaterial',
     'ui.bootstrap',
@@ -17,8 +17,8 @@ var AngularApp = angular.module('AngularApp',
   ])
   .config([  '$routeProvider', 'localStorageServiceProvider',
     function ($routeProvider,   localStorageServiceProvider) {
-      console.log('UserManagementApp config');
-      localStorageServiceProvider.setPrefix('UserManagement');
+      console.log('CSVParserApp config');
+      localStorageServiceProvider.setPrefix('CSVParser');
 
       $routeProvider
         .when('', {
@@ -38,7 +38,7 @@ var AngularApp = angular.module('AngularApp',
   ])
   .run([     '$rootScope', '$location', '$log',
     function ($rootScope,   $location,   $log) {
-      console.log('AngularApp run');
+      console.log('CSVParserApp run');
     }
   ]);
-console.log('AngularApp defined');
+console.log('CSVParserApp defined');

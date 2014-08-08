@@ -1,4 +1,4 @@
-AngularApp.factory('s1',
+CSVParserApp.factory('s1',
   [          '$log',
     function ($log) {
       'use strict';

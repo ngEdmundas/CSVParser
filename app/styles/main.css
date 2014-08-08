@@ -12,6 +12,15 @@ h1, h2, h3, h4, h5, h6 {
         width: 80%;
         text-align: right;
     }
+    .material-input-group textarea.csv-data {
+        width: 100%;
+        height: 500px;
+        background: #c1e2b3;
+    }
+    th {
+        background-color: #c1e2b3;
+        font-weight: 700;
+    }
 }
 .delete-button {
   background-color: lightcoral;
