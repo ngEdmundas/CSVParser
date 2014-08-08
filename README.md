@@ -1,4 +1,4 @@
-CSVParser
-=========
+ngMini
+======
 
-CSV Parser
+Mini template for AngularJS app

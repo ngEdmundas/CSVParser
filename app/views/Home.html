@@ -1,0 +1,25 @@
+<material-content ng-controller="HomeController">
+  <h1>Angular app</h1>
+  <!--h3>Characters from
+    <a href="http://the-croods.wikia.com/wiki/The_Croods_Wiki"
+       target="_blank">
+      The Croods
+    </a>
+  </h3-->
+  <h4>Angular Material Design implementation using Polymer Web Components</h4>
+  <material-tabs selected="which" nobar nostretch zzz-class="special">
+
+    <material-tab >
+      <material-tab-label>Tab 1</material-tab-label>
+      <div class="whiteArea"
+           ng-include="'views/v1.html'"></div>
+    </material-tab>
+
+    <material-tab>
+      <material-tab-label>Tab 2</material-tab-label>
+      <div class="whiteArea"
+           ng-include="'views/v2.html'"></div>
+    </material-tab>
+
+  </material-tabs>
+</material-content>

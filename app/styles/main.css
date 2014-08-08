@@ -1,0 +1,24 @@
+.group-buttons {
+  text-align: right;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+@media screen {
+    div.material-tile-content {
+        margin-right: 0;
+    }
+    div.material-tile-right {
+        width: 80%;
+        text-align: right;
+    }
+}
+.delete-button {
+  background-color: lightcoral;
+}
+.add-button {
+  background-color: lightgreen;
+}
+.group-button {
+  background-color: #add8e6;
+}
